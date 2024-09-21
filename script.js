@@ -29,7 +29,7 @@ function initializeHandlers() {
                     generatePreview("IT5호관", "Buildings/IT5/IT5_fullModel.glb");
                     break;
                 case "214":
-                    generatePreview("청령관", "Buildings/BlueDragon/BlueDragon_fullModel.glb");
+                    generatePreview("청룡관", "Buildings/BlueDragon/BlueDragon_fullModel.glb");
                     break;
             }
         })
