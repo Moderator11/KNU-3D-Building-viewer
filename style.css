@@ -1,0 +1,39 @@
+body { 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Pretendard Variable", "Noto Sans KR", sans-serif;
+}
+
+.header,
+.footer {
+    background-color: #dc2329;
+    color: white;
+    height: 30px;
+    width: 100%;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.title {
+    color: #dc2329;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.instructions {
+    font-size: 20px;
+}
+
+.main-content {
+    height: 70%
+}
+
+
+
