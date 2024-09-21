@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="style.css"></link>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </head>
 <body>
     <div class="header">
@@ -12,8 +13,13 @@
         <div class="sitename">Building 3D View</div>
     </div>
     <div class="body">
-        <div class="building"><a href="./Buildings/IT5/Building_415_IT5.html">IT5(415)</a></div>
-        <div class="building"><a href="./Buildings/BlueDragon/Building_214_BlueDragon.html">청룡관(214)</a></div>
+        <div class="viewer">
+            <model-viewer id="viewer" src="./1F.glb" shadow-intensity="1" camera-orbit="270deg 55deg 4m" camera-controls environment-image="../../studio_small_08_1k.hdr"></model-viewer>
+        </div>
+        <div class="navigationBar">
+            <div class="level" onclick="get2F()">2층</div>
+            <div class="level" onclick="get1F()">1층</div>
+        </div>
     </div>
     <div class="footer">
         Kyoungpook Nat'l University 41566 대구광역시 북구 대학로 80 (산격동,경북대학교) 학교안내전화 053-950-5114, 당직실 053-950-6000
@@ -21,12 +27,8 @@
     </div>
     <script>
         var viewer = document.getElementById("viewer");
-        function getB1() { viewer.src = './Buildings/IT5/B1.glb'; }
-        function get1F() { viewer.src = './Buildings/IT5/1F.glb'; }
-        function get2F() { viewer.src = './Buildings/IT5/2F.glb'; }
-        function get3F() { viewer.src = './Buildings/IT5/3F.glb'; }
-        function get4F() { viewer.src = './Buildings/IT5/4F.glb'; }
-        function get5F() { viewer.src = './Buildings/IT5/5F.glb'; }
+        function get1F() { viewer.src = "./1F.glb"; }
+        function get2F() { viewer.src = './2F.glb'; }
     </script>
 </body>
 </html>

@@ -36,16 +36,26 @@
     border-radius: 20px;
 }
 
-.building {
+.navigationBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+}
+
+.level {
     padding: 20px;
     border: 2px black solid;
-    border-radius: 25px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 40px;
     transition: all .3s ease-in-out;
 }
 
-.building:hover {
-    padding: 30px;
-    background-color: grey;
+.level:hover {
+    transform: scale(1.2);
+    background-color: black;
+    color: white;
 }
 
 .footer {
