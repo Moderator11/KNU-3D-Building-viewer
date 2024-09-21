@@ -46,10 +46,10 @@ function initializeHandlers() {
         building.addEventListener('click', (event) => {
             switch(event.target.id) {
                 case "415":
-                    window.open("Buildings/IT5/Building_415_IT5.html", "_blank");
+                    location.href = './Buildings/IT5/Building_415_IT5.html';
                     break;
                 case "214":
-                    window.open("Buildings/BlueDragon/Building_214_BlueDragon.html", "_blank");
+                    location.href='./Buildings/BlueDragon/Building_214_BlueDragon.html'
                     break;
             }
         })
