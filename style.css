@@ -32,8 +32,24 @@ body {
 }
 
 .main-content {
-    height: 70%
+    height: 70%;
+    width: 100vw;
+    display: flex;
 }
 
+.preview {
+    width: 50%;
+}
 
+.building {
+    fill: rgba(216, 216, 216, 0.8); /* Set initial fill color with slight opacity */
+    stroke: black;
+    transition: transform 0.3s ease, fill 0.3s ease; /* Smooth transition for both transform and fill */
+    position: relative;
+}
+
+.building:hover {
+    fill:yellow;
+    transform: scale(1.1);
+}
 
