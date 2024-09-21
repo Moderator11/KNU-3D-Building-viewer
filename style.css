@@ -110,7 +110,6 @@
     flex-flow: wrap;
     justify-content: space-around;
     gap: 50px;
-    height: 500px;
 }
 
 .card {
@@ -197,7 +196,8 @@ model-viewer {
 }
 
 .KNU-map {
-    margin: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .main-content {
