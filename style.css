@@ -42,14 +42,16 @@ body {
 }
 
 .building {
+    cursor: pointer;
     fill: rgba(216, 216, 216, 0.8); /* Set initial fill color with slight opacity */
     stroke: black;
     transition: transform 0.3s ease, fill 0.3s ease; /* Smooth transition for both transform and fill */
-    position: relative;
+
 }
 
 .building:hover {
-    fill:yellow;
-    transform: scale(1.1);
+    stroke:yellow;
+    transform: scale(1.2);
 }
+
 
