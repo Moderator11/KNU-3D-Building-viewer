@@ -38,7 +38,21 @@ body {
 }
 
 .preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 50%;
+}
+
+.preview model-viewer {
+    width: 400px;
+    height: 400px;
+}
+
+.preview label {
+    text-align: center;
+    font-size: 18px;
 }
 
 .building {
