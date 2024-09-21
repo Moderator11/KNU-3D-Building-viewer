@@ -1,18 +1,18 @@
-function generatePreview(label_name, model_source) {
+function generatePreview(label_name, image_source) {
 
     const label = document.createElement("label");
-    const model = document.createElement("model-viewer");
+    const image = document.createElement("img");
     const preview_container = document.querySelector(".preview");
 
-    model.setAttribute("src", model_source);
-    model.setAttribute("shadow-intensity", "1");
-    model.setAttribute("auto-rotate", "");
-
-    label.appendChild(model);
+    image.setAttribute("src", image_source);
+    image.setAttribute("id", "preview-image");
+    image.setAttribute("style", "width: 500px; height: auto;");
     
     const labelText = document.createTextNode(label_name);
+    label.setAttribute("for", "preview-image");
     label.appendChild(labelText);
 
+    preview_container.append(image);
     preview_container.appendChild(label);
 
 }
@@ -26,10 +26,10 @@ function initializeHandlers() {
         building.addEventListener('mouseover', (event) => {
             switch(event.target.id) {
                 case "415":
-                    generatePreview("IT5호관", "./KNU_3D/Buildings/IT5/IT5_processed.glb");
+                    generatePreview("IT5호관", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSWVLgyfx-A3X4Mm4vMIhzrNLbC1fhZO-nmQ&s");
                     break;
                 case "214":
-                    generatePreview("청령관", "./KNU_3D/Buildings/BlueDragon/Building_214_BlueDragon.html");
+                    generatePreview("청령관", "https://mblogthumb-phinf.pstatic.net/MjAyMzAyMTlfNTEg/MDAxNjc2NzkxNDg4NTYx.xrfHyMStRUu0HtTcIZzHaxIQ6Wp9yP8-uBl14u60xXUg.Orxo3KBwArWwW9pjs3fGnp9Pv8DE-ZXBcvbNCDed6eAg.JPEG.skysj2212/20230202%EF%BC%BF154043.jpg?type=w800");
                     break;
             }
         })
