@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="../style_viewer.css"></link>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="organization">KNU</div>
+        <div class="sitename">Building Viewer 3D</div>
+    </div>
+    <div class="body">
+        <div class="navigationBar">
+            <div class="level" onclick="get2F()">2F</div>
+            <div class="level" onclick="get1F()">1F</div>
+            <div class="level" onclick="GoBack()">🔙</div>
+        </div>
+        <div class="viewer">
+            <model-viewer id="viewer" src="./1F.glb" shadow-intensity="1" camera-orbit="270deg 55deg 4m" camera-controls environment-image="../../studio_small_08_1k.hdr"></model-viewer>
+        </div>
+    </div>
+    <div class="footer">
+        Kyungpook Nat'l University, 80, Daehak-ro, Buk-gu, Daegu, Republic of Korea. School guide : 053-950-5114.
+    </div>
+
+    
+    <!-----------------------<Scripts>---------------------------->
+    <script>
+        var viewer = document.getElementById("viewer");
+        function get1F() { viewer.src = "./1F.glb"; }
+        function get2F() { viewer.src = './2F.glb'; }
+        function GoBack() { history.back() }
+    </script>
+    <!-----------------------<Scripts>---------------------------->
+</body>
+</html>

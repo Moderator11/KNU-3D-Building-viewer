@@ -26,10 +26,10 @@ function initializeHandlers() {
         building.addEventListener('mouseover', (event) => {
             switch(event.target.id) {
                 case "415":
-                    generatePreview("IT5호관", "./KNU_3D/Buildings/IT5/IT5_processed.glb");
+                    generatePreview("IT5호관", "Buildings/IT5/IT5_fullModel.glb");
                     break;
                 case "214":
-                    generatePreview("청령관", "./KNU_3D/Buildings/BlueDragon/1F.glb");
+                    generatePreview("청령관", "Buildings/BlueDragon/BlueDragon_fullModel.glb");
                     break;
             }
         })
@@ -46,10 +46,10 @@ function initializeHandlers() {
         building.addEventListener('click', (event) => {
             switch(event.target.id) {
                 case "415":
-                    window.open("./KNU_3D/Buildings/IT5/Building_415_IT5.html", "_blank");
+                    window.open("Buildings/IT5/Building_415_IT5.html", "_blank");
                     break;
                 case "214":
-                    window.open("./KNU_3D/Buildings/BlueDragon/Building_214_BlueDragon.html", "_blank");
+                    window.open("Buildings/BlueDragon/Building_214_BlueDragon.html", "_blank");
                     break;
             }
         })

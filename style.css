@@ -1,27 +1,192 @@
-body { 
+* {
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    font-family: "Pretendard Variable", "Noto Sans KR", sans-serif;
+    padding: 0;
+    font-family: "Inter", "Pretendard Variable", "Noto Sans KR", sans-serif;
 }
 
-.header,
-.footer {
-    background-color: #dc2329;
-    color: white;
-    height: 30px;
-    width: 100%;
+
+/*======================================<Header>======================================*/
+
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(200, 0, 0);
 }
+
+.organization {
+    padding-left: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.navigation {
+    padding: 20px;
+}
+
+.navigation span {
+    padding: 20px;
+    color: white;
+}
+
+.navigation a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    border: 0 white dotted;
+}
+
+.navigation a:hover {
+    padding: 5px;
+    border: 2px white dotted;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/*======================================<Header>======================================*/
+
+
+/*======================================<Body>======================================*/
+
+.body {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.separationGradient {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to bottom, rgb(200, 0, 0), white);
+}
+
+.introduction {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 1), rgba(255, 255, 255, 0.5)), url(https://knu.ac.kr/wbbs/assets/images/main/knu_main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcomeTitle {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcomeTitle .title {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.welcomeTitle .description {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.viewer {
+    border: 2px black solid;
+    border-radius: 20px;
+}
+
+.sectionTitle {
+    padding: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cardHolder {
+    padding: 10px;
+
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    height: 500px;
+}
+
+.card {
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    transition: all .3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.2);
+}
+
+.card .image {
+    width: 100%;
+    height: 100%;
+    border: 2px grey solid;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.card .name {
+    background-color: white;
+    width: calc(100% - 40px);
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border: 2px grey solid;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 2px 2px 2px 2px lightgray inset;
+}
+
+.building {
+    padding: 20px;
+    border: 2px black solid;
+    border-radius: 25px;
+    transition: all .3s ease-in-out;
+}
+
+.building:hover {
+    padding: 30px;
+    background-color: grey;
+}
+
+model-viewer {
+    width: calc(100vw - 180px);
+    height: calc(100vh - 206px);
+}
+
+/*======================================<Body>======================================*/
+
+
+/*======================================<Footer>======================================*/
+
+.footer {
+    padding: 20px 0 20px 0;
+    background-color: grey;
+    text-align: center;
+    color: white;
+}
+
+/*======================================<Footer>======================================*/
+
+
+/*Please put external codes here*/
 
 .title-container {
     text-align: center;
 }
 
-.title {
+.title-container .title {
     color: #dc2329;
     font-size: 36px;
     font-weight: bold;
@@ -29,6 +194,10 @@ body {
 
 .instructions {
     font-size: 20px;
+}
+
+.KNU-map {
+    margin: 40px;
 }
 
 .main-content {
@@ -67,3 +236,5 @@ body {
     stroke:yellow;
     transform: scale(1.2);
 }
+
+/*Please put external codes here*/
