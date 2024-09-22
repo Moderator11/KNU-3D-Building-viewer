@@ -10,7 +10,8 @@ KNU Indoor Map(KNUIM) - 경북대학교 건물 내부 3차원 지도 서비스
 -박수민 (인공지능 컴퓨팅)(팀장)<br>
 -서지형 (플랫폼 소프트웨어)(팀원)<br>
 -이경민 (인공지능 컴퓨팅)(팀원)<br>
--지아넬라 (인공지능 컴퓨팅)(팀원)
+-지아넬라 (인공지능 컴퓨팅)(팀원)<br><br>
+팀원 및 세부 역할 분담 : https://sootation.synology.me:8080/AboutUs/index.html
 
 ## 시연 영상
 (https://youtu.be/E2y8ygUETGw)
