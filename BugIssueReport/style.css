@@ -12,3 +12,7 @@
 .title {
     width: 50%;
 }
+
+.welcomeTitle {
+    align-items: center;
+}
