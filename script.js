@@ -31,6 +31,9 @@ function initializeHandlers() {
                 case "214":
                     generatePreview("청룡관", "Buildings/BlueDragon/BlueDragon_fullModel.glb");
                     break;
+                case "414":
+                    generatePreview("IT4호관", "Buildings/IT4/IT4_fullModel.glb");
+                    break;
             }
         })
 
@@ -50,6 +53,9 @@ function initializeHandlers() {
                     break;
                 case "214":
                     location.href='./Buildings/BlueDragon/Building_214_BlueDragon.html'
+                    break;
+                case "414":
+                    location.href='./Buildings/IT4/Building_414_IT4.html';
                     break;
             }
         })
