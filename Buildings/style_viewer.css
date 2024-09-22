@@ -117,11 +117,19 @@
 
     /*======================================<Header>======================================*/
 
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
+    }
+
     .header {
         justify-content: space-between;
     }
 
     .organization {
+        cursor: pointer;
         padding-left: 20px;
         font-size: 50px;
     }
