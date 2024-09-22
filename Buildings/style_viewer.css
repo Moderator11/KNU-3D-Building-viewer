@@ -1,31 +1,26 @@
+/* GLOBAL DISPLAY */
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Inter", "Pretendard Variable", "Noto Sans KR", sans-serif;
 }
 
-
-/*======================================<Header>======================================*/
-
 .header {
-    height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: rgb(200, 0, 0);
 }
 
 .organization {
-    padding-left: 20px;
     text-align: center;
-    font-size: 50px;
     font-weight: bold;
     color: white;
 }
 
-.sitename {
-    padding-right: 20px;
-    font-size: 30px;
-    color: white;
+.navigationBar {
+    display: flex;
+    justify-content: center;
 }
 
 .navigation {
@@ -42,31 +37,7 @@
     text-decoration: none;
 }
 
-/*======================================<Header>======================================*/
-
-
-/*======================================<Body>======================================*/
-
-.body {
-    padding: 20px;
-    gap: 20px;
-    display: flex;
-}
-
-.viewer {
-    border: 2px black solid;
-    border-radius: 20px;
-}
-
-.navigationBar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-}
-
 .level {
-    padding: 20px;
     border: 2px black solid;
     text-align: center;
     font-weight: bold;
@@ -80,16 +51,10 @@
     color: white;
 }
 
-model-viewer {
-    width: calc(100vw - 180px);
-    height: calc(100vh - 206px);
+.viewer {
+    border: 2px black solid;
+    border-radius: 20px;
 }
-
-
-/*======================================<Body>======================================*/
-
-
-/*======================================<Footer>======================================*/
 
 .footer {
     padding: 20px 0 20px 0;
@@ -98,4 +63,102 @@ model-viewer {
     color: white;
 }
 
-/*======================================<Footer>======================================*/
+/* MOBILE DISPLAY */
+
+@media (min-width: 320px) and (max-width: 1024px) {
+
+   /*======================================<Header>======================================*/
+
+   .header {
+        height: 60px;
+        justify-content: space-around;
+    }
+
+    .organization {
+        font-size: 30px;
+    }
+
+    .sitename {
+        font-size: 15px;
+        color: white;
+    }
+
+    .navigationBar {
+        margin: 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .level {
+        padding: 10px;
+    }
+
+    .viewer {
+        margin: 20px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5px;
+        font-size: 10px;
+    }
+
+}
+
+/* DESKTOP DISPLAY */
+
+@media (min-width: 1024px) {
+
+    /*======================================<Header>======================================*/
+
+    .header {
+        justify-content: space-between;
+    }
+
+    .organization {
+        padding-left: 20px;
+        font-size: 50px;
+    }
+
+    .sitename {
+        padding-right: 20px;
+        font-size: 30px;
+        color: white;
+    }
+
+    /*======================================<Header>======================================*/
+
+
+    /*======================================<Body>======================================*/
+
+    .body {
+        padding: 20px;
+        gap: 20px;
+        display: flex;
+    }
+
+    .navigationBar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .level {
+        padding: 20px;
+    }
+
+    model-viewer {
+        width: calc(100vw - 180px);
+        height: calc(100vh - 206px);
+    }
+
+
+    /*======================================<Body>======================================*/
+
+
+    /*======================================<Footer>======================================*/
+
+    /*======================================<Footer>======================================*/
+}
+
