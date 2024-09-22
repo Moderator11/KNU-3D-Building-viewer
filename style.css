@@ -1,9 +1,10 @@
+/* GLOBAL STYLING */ 
+
 * {
     margin: 0;
     padding: 0;
     font-family: "Inter", "Pretendard Variable", "Noto Sans KR", sans-serif;
 }
-
 
 /*======================================<Header>======================================*/
 
@@ -11,44 +12,24 @@
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: rgb(200, 0, 0);
 }
 
 .organization {
     padding-left: 20px;
     text-align: center;
-    font-size: 50px;
     font-weight: bold;
     color: white;
 }
 
-.navigation {
-    padding: 20px;
-}
-
 .navigation span {
-    padding: 20px;
     color: white;
 }
 
 .navigation a {
-    font-size: 15px;
     color: white;
     text-decoration: none;
-    transition: all .3s ease-in-out;
-    border: 0 white dotted;
 }
-
-.navigation a:hover {
-    padding: 5px;
-    border: 2px white dotted;
-    border-radius: 10px;
-    font-size: 20px;
-}
-
-/*======================================<Header>======================================*/
-
 
 /*======================================<Body>======================================*/
 
@@ -78,17 +59,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-.welcomeTitle .title {
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.welcomeTitle .description {
-    font-size: 20px;
-    font-weight: bold;
+    gap: 5px;
 }
 
 .viewer {
@@ -97,15 +68,11 @@
 }
 
 .sectionTitle {
-    padding: 50px;
-    font-size: 50px;
     font-weight: bold;
     text-align: center;
 }
 
 .cardHolder {
-    padding: 10px;
-
     display: flex;
     flex-flow: wrap;
     justify-content: space-around;
@@ -113,16 +80,11 @@
 }
 
 .card {
-    cursor: pointer;
     width: 200px;
     height: 200px;
     display: flex;
     flex-direction: column;
     transition: all .3s ease-in-out;
-}
-
-.card:hover {
-    transform: scale(1.2);
 }
 
 .card .image {
@@ -151,21 +113,7 @@
     padding: 20px;
     border: 2px black solid;
     border-radius: 25px;
-    transition: all .3s ease-in-out;
 }
-
-.building:hover {
-    padding: 30px;
-    background-color: grey;
-}
-
-model-viewer {
-    width: calc(100vw - 180px);
-    height: calc(100vh - 206px);
-}
-
-/*======================================<Body>======================================*/
-
 
 /*======================================<Footer>======================================*/
 
@@ -176,64 +124,226 @@ model-viewer {
     color: white;
 }
 
-/*======================================<Footer>======================================*/
+/* MOBILE STYLING */
+
+@media (min-width: 320px) {
+
+    /*======================================<Header>======================================*/
+
+    .header {
+        justify-content: space-around;
+    }    
 
 
-/*Please put external codes here*/
+    .organization {
+        font-size: 30px;
+    }
 
-.title-container {
-    text-align: center;
+    .navigation a {
+        font-size: 12px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .welcomeTitle .title,
+    .welcomeTitle .description {
+        font-weight: bold;
+    }
+
+    /*======================================<Body>======================================*/
+    
+    .introduction {
+        text-align: center;
+    }
+
+    .welcomeTitle {
+        padding: 20px;
+    }
+    
+    .welcomeTitle .title {
+        font-size: 35px;
+        font-weight: bold;
+    }
+    
+    .welcomeTitle .description {
+        font-size: 13px;
+    }
+    
+    .sectionTitle {
+        padding: 30px;
+        font-size: 25px;
+    }
+
+    .cardHolder {
+        padding-bottom: 50px;
+    }
+
+    /*======================================<MAP>======================================*/
+
+    .KNU-map {
+        display: none;
+    }
+
+    /*======================================<Footer>======================================*/
+
+    .footer {
+        font-size: 10px;
+    }
+
 }
 
-.title-container .title {
-    color: #dc2329;
-    font-size: 36px;
-    font-weight: bold;
+
+/* DESKTOP STYLING */
+
+@media (min-width: 1024px) { 
+    
+    /*======================================<Header>======================================*/
+    
+    .header {
+        justify-content: space-between;
+    }
+    
+    .organization {
+        font-size: 50px;
+    }
+    
+    .navigation {
+        padding: 20px;
+    }
+    
+    .navigation span {
+        padding: 20px;
+        color: white;
+    }
+    
+    .navigation a {
+        font-size: 15px;
+        transition: all .3s ease-in-out;
+        border: 0 white dotted;
+    }
+    
+    .navigation a:hover {
+        padding: 5px;
+        border: 2px white dotted;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    
+    /*======================================<Header>======================================*/
+    
+    
+    /*======================================<Body>======================================*/
+    
+    
+    .welcomeTitle {
+        align-items: center;
+    }
+    
+    .welcomeTitle .title {
+        font-size: 50px;
+    }
+    
+    .welcomeTitle .description {
+        font-size: 20px;
+    }
+    
+    .sectionTitle {
+        padding: 50px;
+        font-size: 50px;
+    }
+
+    .cardHolder {
+        padding: 10px;
+    }
+    
+    .card {
+        cursor: pointer;
+    }
+    
+    .card:hover {
+        transform: scale(1.2);
+    }
+    
+    .building {
+        transition: all .3s ease-in-out;
+    }
+    
+    .building:hover {
+        padding: 30px;
+        background-color: grey;
+    }
+    
+    model-viewer {
+        width: calc(100vw - 180px);
+        height: calc(100vh - 206px);
+    }
+    
+    /*======================================<Body>======================================*/
+    
+    
+    /*======================================<Footer>======================================*/
+    
+    
+    /*======================================<Footer>======================================*/
+    
+    
+    /*Please put external codes here*/
+    
+    .title-container {
+        text-align: center;
+    }
+    
+    .title-container .title {
+        color: #dc2329;
+        font-size: 36px;
+        font-weight: bold;
+    }
+    
+    .instructions {
+        font-size: 20px;
+    }
+    
+    .KNU-map {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .main-content {
+        height: 70%;
+        width: 100vw;
+        display: flex;
+    }
+    
+    .preview {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    
+    .preview model-viewer {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .preview label {
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .building {
+        cursor: pointer;
+        fill: rgba(216, 216, 216, 0.8); /* Set initial fill color with slight opacity */
+        stroke: black;
+        transition: transform 0.3s ease, fill 0.3s ease; /* Smooth transition for both transform and fill */
+    
+    }
+    
+    .building:hover {
+        transform: scale(1.2);
+    }
+    
+    /*Please put external codes here*/
 }
 
-.instructions {
-    font-size: 20px;
-}
-
-.KNU-map {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-.main-content {
-    height: 70%;
-    width: 100vw;
-    display: flex;
-}
-
-.preview {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
-
-.preview model-viewer {
-    width: 400px;
-    height: 400px;
-}
-
-.preview label {
-    text-align: center;
-    font-size: 18px;
-}
-
-.building {
-    cursor: pointer;
-    fill: rgba(216, 216, 216, 0.8); /* Set initial fill color with slight opacity */
-    stroke: black;
-    transition: transform 0.3s ease, fill 0.3s ease; /* Smooth transition for both transform and fill */
-
-}
-
-.building:hover {
-    transform: scale(1.2);
-}
-
-/*Please put external codes here*/
